@@ -1,0 +1,47 @@
+.testDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-export-button {
+  display: flex;
+  width: 87%;
+  flex-direction: row-reverse;
+}
+
+.disturbancesTable {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.disturbancesTableWidth {
+  width: 75%;
+}
+
+.deatilsTableContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.deatilsTable {
+  width: 50%;
+}
+
+.tdDeatilsTable {
+  width: 50%;
+}
+
+.tdDisturbancesTableLeft {
+  width: 25%;
+}
+
+.tdDisturbancesTable {
+  width: 37.5%;
+}

@@ -1,0 +1,25 @@
+.VR-results container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  flex-direction: column;
+}
+.div-input-history {
+  display: flex;
+  flex-direction: row;
+}
+.div-input-web-history {
+  padding-right: 10px;
+  padding-left: 150px;
+}
+
+.search {
+  margin-bottom: 6px;
+  margin-left: 10px;
+  width: 100%;
+  height: 45px;
+  margin: 0.7em;
+}
+
+

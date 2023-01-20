@@ -1,0 +1,43 @@
+.mainBtn {
+  background-color: #435889;
+  border: 2px solid #435889;
+}
+
+.mainBtn:hover {
+  background-color: #43588900;
+  border: 2px solid #435889;
+  color: #435889;
+}
+
+.secondBtn {
+  background-color: #9fb284;
+  border: 2px solid #9fb284;
+}
+
+.secondBtn:hover {
+  background-color: #9fb28400;
+  border: 2px solid #9fb284;
+  color: #9fb284;
+}
+
+.editBtn {
+  background-color: #d3c8a9;
+  border: 2px solid #d3c8a9;
+}
+
+.editBtn:hover {
+  background-color: #9fb28400;
+  border: 2px solid #d3c8a9;
+  color: #d3c8a9;
+}
+
+.deleteBtn {
+  background-color: #ca6360;
+  border: 2px solid #ca6360;
+}
+
+.deleteBtn:hover {
+  background-color: #9fb28400;
+  border: 2px solid #ca6360;
+  color: #ca6360;
+}

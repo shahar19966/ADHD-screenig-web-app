@@ -1,0 +1,11 @@
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .input-reg{
+    margin-bottom: 0.5rem
+  }
+  .form-control-reg{
+    width: 600px;
+  }

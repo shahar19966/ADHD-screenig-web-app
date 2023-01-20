@@ -1,0 +1,46 @@
+.div-input {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.div-right {
+  width: 60%;
+}
+
+.div-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.div-left-label {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.title-12 {
+  display: flex;
+  margin-bottom: 15px;
+}
+.label-input {
+  width: 10em;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.label-input-Range {
+  width: 100%;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.addPatientBtn {
+  margin-left: 0.5em;
+}
+
+.disturbanceInput {
+  margin-left: 1em;
+}

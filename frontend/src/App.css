@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "dancingScript";
+  src: local("DancingScript"),
+    url("./fonts/DancingScript.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "neucha";
+  src: local("Neucha"), url("./fonts/Neucha.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "oswald";
+  src: local("Oswald"), url("./fonts/Oswald.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "satisfy";
+  src: local("Satisfy"), url("./fonts/Satisfy.ttf") format("truetype");
+}
+
