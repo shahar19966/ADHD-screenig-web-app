@@ -196,7 +196,7 @@ function MyPatients() {
                             controlId="firstName"
                           >
                             <Form.Label className="label-input">
-                              Session length:
+                            Session length in minutes
                             </Form.Label>
                             <Form.Control
                               type="text"
@@ -212,7 +212,7 @@ function MyPatients() {
                             controlId="Letters delay"
                           >
                             <Form.Label className="label-input">
-                              Letters delay
+                            Letters delay in seconds
                             </Form.Label>
                             <Form.Control
                               type="text"
@@ -228,7 +228,7 @@ function MyPatients() {
                             controlId="DisturbanceTimeRange"
                           >
                             <Form.Label className="label-input-Range">
-                              Disturbance time range
+                            Disturbance time range in seconds
                             </Form.Label>
                             <Form.Control
                               type="text"
