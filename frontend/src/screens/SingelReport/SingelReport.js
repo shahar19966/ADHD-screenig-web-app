@@ -11,6 +11,9 @@ import Table from "react-bootstrap/Table";
 import buttons from "../../styles/buttons.css";
 import { stringify } from "querystring";
 import PolarGraph from "./PolarGraph";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+
 
 
 export const SingelReport = () => {
@@ -18,6 +21,7 @@ export const SingelReport = () => {
   const navigate = useNavigate();
   const [report, setReport] = useState("");
   const [temp2, setTemp2] = useState([]);
+  const [showHeadRotation, setShowHeadRotation] = useState(false);
  
   let temp=" "
   const fetching = async () => {
@@ -119,11 +123,11 @@ export const SingelReport = () => {
       fetching();
     }
   }, [id, report]);
-  const data = [
-    { x: 1, y: 2, z: 3 },
-    { x: 4, y: 5, z: 6 },
-    { x: 7, y: 8, z: 9 }
-  ];
+  // const data = [
+  //   { x: 1, y: 2, z: 3 },
+  //   { x: 4, y: 5, z: 6 },
+  //   { x: 7, y: 8, z: 9 }
+  // ];
   return (
     <MainScreen title="Screening Report">
      {/* <PolarGraph data={data} /> */}
@@ -173,7 +177,8 @@ export const SingelReport = () => {
               <h5>
                 <b>Session with and without disturbances</b>
               </h5>
-              <Table striped bordered hover className="disturbancesTableWidth">
+              
+              <Table striped bordered hover className="disturbancesTableWidth" style={{ "word-break": "break-all" }}>
                 <tbody>
                   <th className="tdDisturbancesTableLeft" colSpan={2}></th>
                   <th className="tdDisturbancesTable">
@@ -240,14 +245,30 @@ export const SingelReport = () => {
                   <tr>
                     <td className="tdDisturbancesTableLeft" colSpan={2}>
                       Head rotation
+                      <button onClick={() => setShowHeadRotation(!showHeadRotation)} style={{marginLeft:15}}>
+                      <FontAwesomeIcon icon={faCaretDown} />
+</button>
                     </td>
                     <td className="tdDisturbancesTable">
-                      {report.WithHeadRotation}
+                    {(report.WithHeadRotation).substring(0,30)+"....."}
                     </td>
                     <td className="tdDisturbancesTable">
-                      {report.WithoutHeadRotation}
+                    {(report.WithoutHeadRotation).substring(0,30)+"....."}
                     </td>
+                   
                   </tr>
+                  {showHeadRotation && (
+                        <tr>
+                        <td className="tdDisturbancesTableLeft" colSpan={2}>
+                        </td>
+                        <td className="tdDisturbancesTable">
+                          {report.WithHeadRotation}
+                        </td>
+                        <td className="tdDisturbancesTable">
+                          {report.WithoutHeadRotation}
+                        </td>
+                      </tr>
+                      )}
                   {/* <tr>
                     <td colSpan={2}>Disturbances metadata</td>
                     <td>{report.DisturbancesMetadata}</td>
